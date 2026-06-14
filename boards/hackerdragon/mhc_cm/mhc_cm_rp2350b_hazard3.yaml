@@ -1,0 +1,20 @@
+identifier: mhc_cm/rp2350b/hazard3
+name: MotorHomeControl ControlModule (Hazard3)
+type: mcu
+arch: riscv
+flash: 2048
+ram: 520
+toolchain:
+  - zephyr
+supported:
+  - clock
+  - counter
+  - dma
+  - gpio
+  - hwinfo
+  - i2c
+  - pwm
+  - spi
+  - uart
+  - usbd
+  - watchdog

@@ -1,0 +1,12 @@
+# DS1621 temperature sensor configuration options
+
+# Copyright (c) 2026 Adrian Dummermuth
+# SPDX-License-Identifier: Apache-2.0
+
+config DS1621
+	bool "DS1621"
+	default y
+	depends on DT_HAS_MAXIM_DS1621_ENABLED
+	select I2C
+	help
+	  Enable driver for DS1621 I2C-based temperature sensor.

@@ -1,0 +1,6 @@
+board:
+  name: mhc_cm
+  full_name: MotorHomeControl ControlModule
+  vendor: Hackerdragon
+  socs:
+    - name: rp2350b

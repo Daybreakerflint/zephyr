@@ -1,0 +1,12 @@
+# INA4235 Quad Current and Power Monitor
+
+# Copyright 2026 Adrian Dummermuth
+# SPDX-License-Identifier: Apache-2.0
+
+config INA4235
+	bool "INA4235 Quad Current and Power Monitor"
+	default y
+	depends on DT_HAS_TI_INA4235_ENABLED
+	select I2C
+	help
+	  Enable driver for INA4235 Current and Power Monitor.
