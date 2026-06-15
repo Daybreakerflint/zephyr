@@ -18,7 +18,8 @@
 		zephyr,flash = &flash0;
 		zephyr,flash-controller = &qmi;
 		zephyr,console = &uart0;
-		uart,shell-uart = &uart0;
+		zephyr,shell-uart = &uart0;
+		zephyr,uart-mcumgr = &uart0;
 	};
 
 	aliases {
@@ -83,7 +84,7 @@ gpio0_lo: &gpio0 {
 };
 
 &i2c0 {
-	clock-frequency = <I2C_BITRATE_FAST_PLUS>;
+	clock-frequency = <I2C_BITRATE_FAST>;
 	pinctrl-0 = <&i2c0_default>;
 	pinctrl-names = "default";
 	status = "okay";
